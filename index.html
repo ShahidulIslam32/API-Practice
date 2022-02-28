@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search University</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-nav navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand abcd" href="#">University Finder</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto abc">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">API</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Search Uni</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mt-4 mb-3 text-center text-white">Search Your Favorite University From Favorite Country </h2>
+                </div>
+                <div class="input-group mb-3 w-50 mx-auto mt-4">
+                    <input required id="university" type="text" class="form-control"
+                        placeholder="Search University by Country Name" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <button onclick="searchUni()" id="uniBtn" class="btn btn-primary" type="button"
+                        id="button-addon2">Search University</button>
+                </div>
+                <h4 class="mt-3 text-center text-white" id="erorMsg"></h4>
+                <img id="spinner" class="img" src="img/load.jpg" alt="">
+                
+            </div>
+                
+
+        </div>
+        <!-- university search result -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="search-result" class="cardiff">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+</body>
+</html>

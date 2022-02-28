@@ -1,0 +1,33 @@
+body{
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.42620798319327735) 71%, rgba(252,176,69,1) 99%);
+ 
+}
+.abc{
+    position: relative;
+    right: -70%;
+}
+.abcd{
+   position: relative;
+   right: -5%;
+   font-size: 1.5em; 
+}
+
+#search-result{
+    width: 900px;
+    margin:20px auto;
+}
+
+.card:hover{
+    background-color: slateblue;
+    color: white;
+    transition: 1s ease all;
+    transform:scale(1.2);
+    z-index:1;
+}
+.img{
+    width: 125px;
+    margin-left: 43%;
+    margin-top: 20px;
+    display: none;
+}
